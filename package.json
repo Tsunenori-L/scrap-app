@@ -6,7 +6,8 @@
   "scripts": {
     "build-watch": "webpack -w",
     "start-server": "./node_modules/.bin/nodemon ./server/index.js",
-    "start": "npm run build-watch & npm run start-server",
+    "dev-start": "npm run build-watch & npm run start-server",
+    "start": "node ./server/index.js",
     "seed": "node ./server/database/utils/seed.js"
   },
   "dependencies": {
