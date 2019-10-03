@@ -2,12 +2,10 @@ require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const chalk = require('chalk');
-const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 
 const app = express();
 
-// app.use(morgan(process.env.MORGAN_MODE || null));
 app.use(express.json());
 
 const publicPath = path.join(__dirname, '..', 'public');
